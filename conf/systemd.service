@@ -1,15 +1,19 @@
 [Unit]
-Description=Small description of the service
+Description=mollysocket server
 After=network.target
 
 [Service]
+Environment="RUST_LOG=info"
+Environment="ROCKET_PORT=8000"
+
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__INSTALL_DIR__/
+WorkingDirectory=__INSTALL_DIR__/mollysocket server
 ExecStart=__INSTALL_DIR__/script
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
+Restart=on-failure
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
