@@ -9,8 +9,8 @@ Environment="ROCKET_PORT=8000"
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__INSTALL_DIR__/mollysocket server
-ExecStart=__INSTALL_DIR__/script
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__INSTALL_DIR__/mollysocket server
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 Restart=on-failure
