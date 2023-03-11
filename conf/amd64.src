@@ -5,3 +5,4 @@ SOURCE_FORMAT=whatever
 SOURCE_IN_SUBDIR=false
 SOURCE_FILENAME=mollysocket-0.1.0
 SOURCE_EXTRACT=false
+SOURCE_RENAME=mollysocket
