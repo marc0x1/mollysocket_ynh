@@ -10,7 +10,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/mollysocket-0.1.0 server
+ExecStart=__INSTALL_DIR__/mollysocket server
 Restart=on-failure
 
 # Sandboxing options to harden security

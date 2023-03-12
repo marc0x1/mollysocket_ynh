@@ -14,7 +14,7 @@ code = "https://github.com/MollySocket/mollysocket"
 fund = "https://liberapay.com/S1m/"
 
 [integration]
-yunohost = ">= 11.1.6"
+yunohost = ">= 11.1.14"
 architectures = ['amd64']
 multi_instance = true
 ldap = "not_relevant" 
@@ -32,20 +32,25 @@ ram.runtime = "50M"
     type = "path"
     default = "/mollysocket"
 
-    [install.init_main_permission]
-    type = "group"
-    default = "visitors"
-
     [install.account_id]
     ask.en = "Account ID"
     help.en = "Settings > Notification > Push Strategy > Click on enabled > Copy the account ID"
     type = "string"
 
 [resources]
+    [resources.sources]
+
+            [resources.sources.main]
+            in_subdir = false
+            amd64.url = "https://github.com/MollySocket/mollysocket/releases/download/0.1.0/mollysocket-0.1.0"
+            amd64.sha256 = "c6fb864c62be9e1437f555554dbc91a1400850274f18bdf2cfeb6529d7f91dc4"
+            rename = "mollysocket"
+            format = "whatever"
+            extract = false
     [resources.system_user]
 
     [resources.install_dir]
-    
+
     [resources.permissions]
     main.url = "/"
 

@@ -1,7 +1,0 @@
-SOURCE_URL=https://github.com/MollySocket/mollysocket/releases/download/0.1.0/mollysocket-0.1.0
-SOURCE_SUM=c6fb864c62be9e1437f555554dbc91a1400850274f18bdf2cfeb6529d7f91dc4
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=whatever
-SOURCE_IN_SUBDIR=false
-SOURCE_FILENAME=mollysocket-0.1.0
-SOURCE_EXTRACT=false
