@@ -15,7 +15,7 @@ fund = "https://liberapay.com/S1m/"
 
 [integration]
 yunohost = ">= 11.1.14"
-architectures = ['amd64']
+architectures = "all"
 multi_instance = true
 ldap = "not_relevant" 
 sso = "not_relevant"
@@ -38,14 +38,15 @@ ram.runtime = "50M"
     type = "string"
 
 [resources]
+
     [resources.sources]
 
-            [resources.sources.main]
-            in_subdir = false
-            url = "https://github.com/MollySocket/mollysocket/releases/download/0.1.0/mollysocket-0.1.0"
-            sha256 = "c6fb864c62be9e1437f555554dbc91a1400850274f18bdf2cfeb6529d7f91dc4"
-            format = "whatever"
-            extract = false
+        [resources.sources.main]
+        in_subdir = false
+        url = "https://github.com/MollySocket/mollysocket/releases/download/0.1.0/mollysocket-0.1.0"
+        sha256 = "c6fb864c62be9e1437f555554dbc91a1400850274f18bdf2cfeb6529d7f91dc4"
+        format = "whatever"
+        extract = false
 
     [resources.system_user]
 
