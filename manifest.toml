@@ -39,16 +39,14 @@ ram.runtime = "50M"
 
 [resources]
 
-    [resources.sources]
-
-        [resources.sources.main]
+    [resources.sources.main]
         
-        amd64.url = "https://github.com/MollySocket/mollysocket/releases/download/0.1.0/mollysocket-0.1.0"
-        amd64.sha256 = "c6fb864c62be9e1437f555554dbc91a1400850274f18bdf2cfeb6529d7f91dc4"
+    amd64.url = "https://github.com/MollySocket/mollysocket/releases/download/0.1.0/mollysocket-0.1.0"
+    amd64.sha256 = "c6fb864c62be9e1437f555554dbc91a1400850274f18bdf2cfeb6529d7f91dc4"
        
-        extract   = false
-        in_subdir = false
-        rename    = "documize"
+    extract   = false
+    in_subdir = false
+    rename    = "mollysocket"
 
     [resources.system_user]
 
