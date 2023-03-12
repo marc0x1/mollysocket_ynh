@@ -9,7 +9,7 @@
 #=================================================
 
 mollysocket_setup_source() {
-    ynh_setup_source -d "$install_dir" -s "$YNH_ARCH"
+    ynh_setup_source -d "$install_dir"
     chown -R $app:$app "$install_dir"
     chmod 755 "$install_dir/mollysocket"
 }
